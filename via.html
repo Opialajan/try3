@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florence Via Chavez - Creative Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+        <link rel="stylesheet" type="text/css" href="style.css" >
+            <link rel="icon" type="image/x-icon" href="favicon.png">
+
+
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Background -->
+    <div class="elegant-background">
+        <div class="bg-pattern"></div>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-circle" style="top: 15%; left: 10%;"></div>
+            <div class="shape shape-square" style="top: 60%; right: 15%;"></div>
+            <div class="shape shape-triangle" style="bottom: 20%; left: 20%;"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo"><img src="logo.png" alt="logo" width="150" height="60"></div>
+            <div class="nav-links">
+                <a class="nav-link active" data-section="home">Home</a>
+                <a class="nav-link" data-section="about">About</a>
+                <a class="nav-link" data-section="experience">Experience</a>
+                <a class="nav-link" data-section="portfolio">Portfolio</a>
+                <a class="nav-link" data-section="testimonials">Testimonials</a>
+                <a class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-menu">
+            <a class="mobile-menu-link" data-section="home">Home</a>
+            <a class="mobile-menu-link" data-section="about">About</a>
+            <a class="mobile-menu-link" data-section="experience">Experience</a>
+            <a class="mobile-menu-link" data-section="portfolio">Portfolio</a>
+            <a class="mobile-menu-link" data-section="testimonials">Testimonials</a>
+            <a class="mobile-menu-link" data-section="contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        Available for freelance
+                    </div>
+                    <h1 class="hero-title">
+                        Crafting Visual Stories that <span class="gradient-text">Engage & Inspire</span>
+                    </h1>
+                    <p class="hero-description">
+                        Graphics & Social Media Manager specializing in creating compelling visual narratives that connect brands with their audiences and drive meaningful engagement.
+                    </p>
+                    <div class="button-group">
+                        <a href="#portfolio" class="btn-primary">
+                            <i class="fas fa-briefcase"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="hero-image">
+                        <img src="pic-profile.png" alt="Creative Designer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card fade-in">
+                    <div class="stat-number" id="stat1">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" id="stat2">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" id="stat3">0</div>
+                    <div class="stat-label">Testimonials</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number" id="stat4">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="grid grid-2">
+                <div class="fade-in">
+                    <img src="profile.jpg" alt="Creative Workspace" style="border-radius: 30px; box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);">
+                </div>
+                <div class="fade-in">
+                    <h2 class="section-title" style="text-align: left;">
+                        Hello, <span class="gradient-text">I'm Florence Via Chavez</span>
+                    </h2>
+                    <p class="hero-description" style="text-align: left;">
+I’m a creative and results-driven Digital Marketing Specialist, Social Media Manager, and Graphic Designer passionate about blending design, strategy, and storytelling to help brands build meaningful connections with their audiences. With a strong background in education and technology, I approach every project with empathy, innovation, and authenticity creating strategies and visuals that not only engage but also inspire.                    </p>
+                    
+                    <button class="btn-primary">
+                        <i class="fas fa-download"></i>
+                       <a href="resume.pdf"> Download Resume</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Marquee Section -->
+<!-- Client Marquee Section -->
+<section id="clients" style="padding: 80px 0; background: #f8fafc; overflow: hidden;">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Trusted by Amazing Clients</h2>
+            <p class="section-subtitle">
+                Proud to have worked with these incredible brands
+            </p>
+        </div>
+    </div>
+
+    <div class="marquee-wrapper">
+        <div class="marquee-content">
+             <!-- Client 1 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/1.png" alt="Client 1">
+                </div>
+            </div>
+             <!-- Client 1 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/2.png" alt="Client 1">
+                </div>
+            </div>
+            <!-- Client 1 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/3.png" alt="Client 1">
+                </div>
+            </div>
+
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/4.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/5.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/6.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/7.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/8.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/9.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/10.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/11.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/12.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/13.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/14.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/14.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/14.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/15.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/16.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/17.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/18.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/19.png" alt="Client 2">
+                </div>
+            </div>
+            <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/20.png" alt="Client 2">
+                </div>
+            </div>
+
+              <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/21.png" alt="Client 2">
+                </div>
+            </div>
+
+              <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/22.webp" alt="Client 2">
+                </div>
+            </div>
+              <!-- Client 2 -->
+            <div class="client-logo-wrapper">
+                <div class="client-logo">
+                    <img src="logo/23.avif" alt="Client 2">
+                </div>
+            </div>
+
+
+          
+        </div>
+    </div>
+</section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-light">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Expertise & Services</h2>
+                <p class="section-subtitle">
+                    Comprehensive design solutions to bring your vision to life
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div class="card-icon">🎨</div>
+                    <h3 class="card-title">Graphic Design</h3>
+                    <p class="card-description">Creating stunning visuals that communicate brand messages effectively through typography, color theory, and composition.</p>
+                    <div class="tools-section">
+                        <button class="tools-toggle" onclick="toggleTools('tools1')">
+                            <i class="fas fa-chevron-down" id="icon-tools1"></i>
+                            Tools & Software
+                        </button>
+                        <div class="tools-list" id="tools1">
+                            <span class="tool-tag">Photoshop</span>
+                            <span class="tool-tag">Illustrator</span>
+                            <span class="tool-tag">InDesign</span>
+                            <span class="tool-tag">Canva</span>
+                            <span class="tool-tag">Figma</span>
+                            <span class="tool-tag">Lightroom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">✨</div>
+                    <h3 class="card-title">UI/UX Design</h3>
+                    <p class="card-description">Designing intuitive and engaging user interfaces that provide seamless experiences and drive user satisfaction.</p>
+                    <div class="tools-section">
+                        <button class="tools-toggle" onclick="toggleTools('tools2')">
+                            <i class="fas fa-chevron-down" id="icon-tools2"></i>
+                            Tools & Software
+                        </button>
+                        <div class="tools-list" id="tools2">
+                            <span class="tool-tag">Figma</span>
+                            <span class="tool-tag">Canva</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">Brand Identity</h3>
+                    <p class="card-description">Building cohesive brand identities that resonate with audiences and establish strong market presence.</p>
+                    <div class="tools-section">
+                        <button class="tools-toggle" onclick="toggleTools('tools3')">
+                            <i class="fas fa-chevron-down" id="icon-tools3"></i>
+                            Tools & Software
+                        </button>
+                        <div class="tools-list" id="tools3">
+                            <span class="tool-tag">Illustrator</span>
+                            <span class="tool-tag">Photoshop</span>
+                            <span class="tool-tag">Adobe Premiere Pro</span>
+                            <span class="tool-tag">Capcut</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">📱</div>
+                    <h3 class="card-title">Social Media/Graphics</h3>
+                    <p class="card-description">Managing and growing social media presence with creative content that engages and converts audiences.</p>
+                    <div class="tools-section">
+                        <button class="tools-toggle" onclick="toggleTools('tools4')">
+                            <i class="fas fa-chevron-down" id="icon-tools4"></i>
+                            Tools & Software
+                        </button>
+                        <div class="tools-list" id="tools4">
+                            <span class="tool-tag">Canva</span>
+                            <span class="tool-tag">Premiere Pro</span>
+                            <span class="tool-tag">CapCut</span>
+                            <span class="tool-tag">Hootsuite</span>
+                            <span class="tool-tag">Buffer</span>
+                        </div>
+                    </div>
+                </div>
+
+                  
+
+                <div class="card fade-in">
+                    <div class="card-icon">💡</div>
+                    <h3 class="card-title">Creative Strategy</h3>
+                    <p class="card-description">Developing innovative strategies that drive engagement, build communities, and deliver measurable results.</p>
+                    <div class="tools-section">
+                        <button class="tools-toggle" onclick="toggleTools('tools5')">
+                            <i class="fas fa-chevron-down" id="icon-tools5"></i>
+                            Tools & Software
+                        </button>
+                        <div class="tools-list" id="tools5">
+                            <span class="tool-tag">Google Analytics</span>
+                                                        <span class="tool-tag">Google Workspace</span>
+                            <span class="tool-tag">Clickup</span>
+                                                        <span class="tool-tag">Airtable</span>
+                            <span class="tool-tag">Notion</span>
+                            <span class="tool-tag">Miro</span>
+                            <span class="tool-tag">Trello</span>
+                            <span class="tool-tag">Asana</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">📞</div>
+                    <h3 class="card-title">Communication</h3>
+                    <p class="card-description">Managing and growing social media presence with creative content that engages and converts audiences.</p>
+                    <div class="tools-section">
+                        <button class="tools-toggle" onclick="toggleTools('tools5')">
+                            <i class="fas fa-chevron-down" id="icon-tools5"></i>
+                            Tools & Software
+                        </button>
+                        <div class="tools-list" id="tools5">
+                            <span class="tool-tag">Discord</span>
+                            <span class="tool-tag">MS Teams</span>
+                            <span class="tool-tag">Zoom</span>
+                            <span class="tool-tag">WhatsApp</span>
+                            <span class="tool-tag">Slack</span>
+                                                        <span class="tool-tag">Telegram</span>
+                            <span class="tool-tag">Basecamp</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">
+                    Click on any category to explore my complete portfolio gallery
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card fade-in" onclick="openGallery('uiux')">
+                    <div class="card-icon" style="font-size: 40px;">💻</div>
+                    <h3 class="card-title">UI/UX</h3>
+                    <p class="card-description">View 5+ projects</p>
+                    <div class="card-footer">
+                        <span>Explore Gallery</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="card fade-in" onclick="openGallery('brand')">
+                    <div class="card-icon" style="font-size: 40px;">🎨</div>
+                    <h3 class="card-title">Branding</h3>
+                    <p class="card-description">View 5+ projects</p>
+                    <div class="card-footer">
+                        <span>Explore Gallery</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="card fade-in" onclick="openGallery('social')">
+                    <div class="card-icon" style="font-size: 40px;">📱</div>
+                    <h3 class="card-title">Graphics</h3>
+                    <p class="card-description">View 100+ projects</p>
+                    <div class="card-footer">
+                        <span>Explore Gallery</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="card fade-in" onclick="openGallery('reels')">
+                    <div class="card-icon" style="font-size: 40px;">✨</div>
+                    <h3 class="card-title">Reels</h3>
+                    <p class="card-description">View 15+ projects</p>
+                    <div class="card-footer">
+                        <span>Explore Gallery</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="card fade-in" onclick="openGallery('video')">
+                    <div class="card-icon" style="font-size: 40px;">🎬</div>
+                    <h3 class="card-title">Video</h3>
+                    <p class="card-description">View projects</p>
+                    <div class="card-footer">
+                        <span>Explore Gallery</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                 <div class="card fade-in" onclick="openGallery('newsletter')">
+                    <div class="card-icon" style="font-size: 40px;">📰</div>
+                    <h3 class="card-title">NewsLetter</h3>
+                    <p class="card-description">View 5+ projects</p>
+                    <div class="card-footer">
+                        <span>Explore Gallery</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-content">
+            <button class="gallery-close" onclick="closeGallery()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="gallery-header">
+                <h2 class="gallery-title" id="galleryTitle"></h2>
+                <p class="gallery-subtitle" id="gallerySubtitle"></p>
+            </div>
+            <div class="masonry-grid" id="galleryGrid"></div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-light">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">
+                    What clients say about working together
+                </p>
+            </div>
+
+            <div class="testimonial-card fade-in" id="testimonialCard">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text" id="testimonialText"></p>
+                <div class="testimonial-author">
+                    <img src="" alt="" class="testimonial-avatar" id="testimonialAvatar">
+                    <div>
+                        <div class="testimonial-name" id="testimonialName"></div>
+                        <div class="testimonial-role" id="testimonialRole"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%); position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.15) 1px, transparent 0); background-size: 50px 50px;"></div>
+        
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="section-header fade-in">
+                <h2 class="section-title" style="color: white;">Let's Work Together</h2>
+                <p class="section-subtitle" style="color: #93C5FD;">
+                    Ready to bring your vision to life? Get in touch!
+                </p>
+            </div>
+
+            <div class="contact-cards fade-in">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-label">Email Address</div>
+                    <div class="contact-value">florenceviachavez@gmail.com</div>
+                    <a href="mailto:florenceviachavez@gmail.com" class="contact-action">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Email
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-label">Phone Number</div>
+                    <div class="contact-value">09486147109</div>
+                    <a href="tel:09486147109" class="contact-action">
+                        <i class="fas fa-phone-alt"></i>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <div class="footer-logo">Florence Via Chavez</div>
+                <div class="footer-tagline">Graphics & Social Media Manager</div>
+            </div>
+
+            <div class="footer-links">
+                <a class="footer-link" data-section="home">Home</a>
+                <a class="footer-link" data-section="about">About</a>
+                <a class="footer-link" data-section="experience">Services</a>
+                <a class="footer-link" data-section="portfolio">Portfolio</a>
+                <a class="footer-link" data-section="contact">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/florence-via-c-chavez-9a3aa7396/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/florviachvz/" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/florencevia.chavez?mibextid=wwXIfr&rdid=IzAAqKyd81PRtNek&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ALA5enPdm%2F%3Fmibextid%3DwwXIfr" class="footer-social-link"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:florenceviachavez@gmail.com" class="footer-social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 Florence Via Chavez. Made with <span class="footer-heart">❤</span> and creativity.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-rocket"></i>
+    </button>
+<script src="script.js"></script>
+
+</body>
+</html>
